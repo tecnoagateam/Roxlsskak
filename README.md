@@ -1,7 +1,7 @@
 #### A Telegram bot that provides real-time multiplayer games that can be played in any chat.
 
 You can see the bot in action by messaging [@RocksGameBot](https://telegram.me/RocksGameBot).
-
+- [logo![(https://telegra.ph/file/469ad9da3363eb0dc7514.jpg)]
 #### Currently available games:
 
 - Tic-Tac-Toe
