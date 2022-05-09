@@ -1,20 +1,20 @@
-#### A Telegram bot that provides real-time multiplayer games that can be played in any chat.
+#### Telegram Multiplayer İnline Games bot Azərbaycan dilində ilk.
 
-You can see the bot in action by messaging [@RocksGameBot](https://telegram.me/RocksGameBot).
-- [logo![(https://telegra.ph/file/469ad9da3363eb0dc7514.jpg)]
-#### Currently available games:
+ **```Telegramda tapa bilərsiz```** [@RocksGameAzBot](https://telegram.me/RocksGameAzBot).
+
+#### ```😈 Bot-da olan oyunlar:```
 
 - Tic-Tac-Toe
-- Tic-Tac-Four ([@DO97](https://github.com/DO97))
-- Elephant XO ([@DO97](https://github.com/DO97))
+- Tic-Tac-Four 
+- Elephant XO 
 - Connect Four
 - Rock-Paper-Scissors
-- Rock-Paper-Scissors-Lizard-Spock ([@DO97](https://github.com/DO97))
+- Rock-Paper-Scissors-Lizard-Spock
 - Russian Roulette
 - Checkers
 - Pool Checkers
 
-## Deploying
+## 🌹```Heroku Deploy```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AzeMusic/Roxlsskak)
 
