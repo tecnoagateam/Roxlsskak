@@ -245,7 +245,7 @@ class Checkers extends Game
             $inline_keyboard[] = [
                 new InlineKeyboardButton(
                     [
-                        'text'          => __('Play again!'),
+                        'text'          => __('Yeniden oyna!'),
                         'callback_data' => self::getCode() . ';start',
                     ]
                 ),
