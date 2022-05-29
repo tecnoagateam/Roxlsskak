@@ -67,7 +67,7 @@ class InlinequeryCommand extends SystemCommand
                 'inline_query_id'     => $this->getUpdate()->getInlineQuery()->getId(),
                 'cache_time'          => 60,
                 'results'             => '[' . implode(',', $array_article) . ']',
-                'switch_pm_text'      => 'Help',
+                'switch_pm_text'      => 'Games',
                 'switch_pm_parameter' => 'start',
             ]
         );
@@ -121,7 +121,7 @@ class InlinequeryCommand extends SystemCommand
             [
                 new InlineKeyboardButton(
                     [
-                        'text'          => __('Create'),
+                        'text'          => __('Yaray'),
                         'callback_data' => $game_code . ';new',
                     ]
                 ),
