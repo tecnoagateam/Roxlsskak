@@ -42,8 +42,8 @@ class Tictactoe extends Game
      *
      * @var string
      */
-    protected static $description = 'Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid.';
-
+    protected      static      $description      =      'Tic-tac-toe iki oyunçu üçün oyundur, X və O, növbə 3×3 şəbəkədə boşluqları qeyd edir.'     üçün 
+.
     /**
      * Game thumbnail image
      *
