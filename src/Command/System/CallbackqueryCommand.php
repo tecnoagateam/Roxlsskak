@@ -70,7 +70,7 @@ class CallbackqueryCommand extends SystemCommand
         return Request::answerCallbackQuery(
             [
                 'callback_query_id' => $callback_query->getId(),
-                'text'              => __("Bad request!"),
+                'text'              => __("Səhv tələb!"),
                 'show_alert'        => true,
             ]
         );
