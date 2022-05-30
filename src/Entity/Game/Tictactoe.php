@@ -124,7 +124,7 @@ class Tictactoe extends Game
         }
 
         if (isset($args) && isset($data['board'][$args[0]][$args[1]]) && $data['board'][$args[0]][$args[1]] !== '') {
-            return $this->answerCallbackQuery(__("Invalid move!"), true);
+            return $this->answerCallbackQuery(__("Yanlış hərəkət!"), true);
         }
 
         $this->max_y = count($data['board']);
@@ -138,9 +138,9 @@ class Tictactoe extends Game
                 $data['board'][$args[0]][$args[1]] = 'O';
                 $data['current_turn'] = 'X';
             } else {
-                Utilities::debugPrint('Invalid move data: ' . ($args[0]) . ' - ' . ($args[1]));
+                Utilities::debugPrint('Yanlış köçürmə datası: ' . ($args[0]) . ' - ' . ($args[1]));
 
-                return $this->answerCallbackQuery(__("Invalid move!"), true);
+                return $this->answerCallbackQuery(__("Yanlış hərəkət!"), true);
             }
 
             Utilities::debugPrint($data['current_turn'] . ' placed at ' . ($args[1]) . ' - ' . ($args[0]));
@@ -150,9 +150,9 @@ class Tictactoe extends Game
         $gameOutput = '';
 
         if (!empty($isOver) && in_array($isOver, ['X', 'O'])) {
-            $gameOutput = Emoji::trophy() . ' <b>' . __("{PLAYER} won!", ['{PLAYER}' => '</b>' . $this->getUserMention($data['settings'][$isOver]) . '<b>']) . '</b>';
+            $gameOutput = Emoji::trophy() . ' <b>' . __("{PLAYER} Qazandı!", ['{PLAYER}' => '</b>' . $this->getUserMention($data['settings'][$isOver]) . '<b>']) . '</b>';
         } elseif ($isOver == 'T') {
-            $gameOutput = Emoji::chequeredFlag() . ' <b>' . __("Game ended with a draw!") . '</b>';
+            $gameOutput = Emoji::chequeredFlag() . ' <b>' . __("Oyun heç-heçə ilə bitdi!!") . '</b>';
         }
 
         if (!empty($isOver) && in_array($isOver, ['X', 'O', 'T'])) {
