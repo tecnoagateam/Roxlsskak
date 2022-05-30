@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: @Tenha055\n"
+"Last-Translator: @jacklul\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,85 +16,85 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: Command/Admin/CleansessionsCommand.php:149
-msgid "Yeni Sessiya Yaradın"
+msgid "Create New Session"
 msgstr ""
 
 #: Command/Admin/CleansessionsCommand.php:156
-msgid "Bu oyun sessiyasının müddəti bitdi."
+msgid "This game session has expired."
 msgstr ""
 
 #: Command/Admin/CleansessionsCommand.php:213
 #: Command/System/InlinequeryCommand.php:124 Entity/Game.php:805
-msgid "Yarat"
+msgid "Create"
 msgstr ""
 
 #: Command/System/CallbackqueryCommand.php:73
-msgid "Yanlış sorğu!"
+msgid "Bad request!"
 msgstr ""
 
 #: Command/System/InlinequeryCommand.php:49 Entity/Game.php:634
 #: Entity/Game.php:708
-msgid "Bu oyun sessiyası boşdur."
+msgid "This game session is empty."
 msgstr ""
 
 #: Command/User/StartCommand.php:60
-msgid "Salam"
+msgid "Hi!"
 msgstr ""
 
 #: Command/User/StartCommand.php:61 Command/User/StartCommand.php:72
 #: Entity/Game.php:558 Entity/Game.php:787 Entity/Game.php:865
-msgid "Oyna"
+msgid "Play"
 msgstr ""
 
 #: Command/User/StartCommand.php:61
-msgid "Oyuna Başlamaq üçün Oyna Düyməsini klikləyin və sonra oynamaq üçün söhbət seçin."
+msgid "To begin, start a message with {USAGE} in any of your chats or click the {BUTTON} button and then select a chat to play in."
 msgstr ""
 
 #: Entity/Game.php:232
-msgid "Bu oyun seansı qəzaya uğradı."
+msgid "This game session has crashed."
 msgstr ""
 
 #: Entity/Game.php:464
-msgid "Bu oyun artıq yaradılıb!"
+msgid "This game is already created!"
 msgstr ""
 
 #: Entity/Game.php:477 Entity/Game.php:545 Entity/Game.php:623
 #: Entity/Game.php:648 Entity/Game.php:685 Entity/Game.php:790
 #: Entity/Game/Russianroulette.php:166
-msgid "{PLAYER_HOST} rəqibin qoşulmasını gözləyir..."
+msgid "{PLAYER_HOST} is waiting for opponent to join..."
 msgstr ""
 
 #: Entity/Game.php:477 Entity/Game.php:545 Entity/Game.php:623
 #: Entity/Game.php:648 Entity/Game.php:685 Entity/Game.php:790
 #: Entity/Game.php:843 Entity/Game/Russianroulette.php:166
 #: Entity/Game/Russianroulette.php:318
-msgid "Qoşulun"
+msgid "Join"
 msgstr ""
 
 #: Entity/Game.php:477 Entity/Game.php:545 Entity/Game.php:623
 #: Entity/Game.php:648 Entity/Game.php:685 Entity/Game.php:790
 #: Entity/Game/Russianroulette.php:166
-msgid "Qoşulmaq üçün {BUTTON} düyməsini toxunun."
+msgid "Press {BUTTON} button to join."
 msgstr ""
 
 #: Entity/Game.php:558 Entity/Game.php:787
-msgid "{PLAYER_GUEST} qoşuldu..."
+msgid "{PLAYER_GUEST} joined..."
 msgstr ""
 
 #: Entity/Game.php:558 Entity/Game.php:787
-msgid "{PLAYER} başlaması gözlənilir..."
+msgid "Waiting for {PLAYER} to start..."
 msgstr ""
 
 #: Entity/Game.php:558 Entity/Game.php:787
-msgid "Başlamaq üçün {BUTTON} düyməsini basın."
+msgid "Press {BUTTON} button to start."
 msgstr ""
 
 #: Entity/Game.php:564
-msgid "Siz özünüzlə oynaya bilməzsiniz!"
+msgid "You cannot play with yourself!"
 msgstr ""
 
 #: Entity/Game.php:567
-msgid "Bu oyun doludur!"
+msgid "This game is full!"
 msgstr ""
 
 #: Entity/Game.php:610 Entity/Game.php:712 Entity/Game.php:743
@@ -103,27 +103,27 @@ msgstr ""
 #: Entity/Game/Poolcheckers.php:80 Entity/Game/Poolcheckers.php:133
 #: Entity/Game/Rockpaperscissors.php:75 Entity/Game/Russianroulette.php:75
 #: Entity/Game/Tictactoe.php:84
-msgid "Sən bu oyunda deyilsən!"
+msgid "You're not in this game!"
 msgstr ""
 
 #: Entity/Game.php:623 Entity/Game.php:648
-msgid "{PLAYER} çıxın..."
+msgid "{PLAYER} quit..."
 msgstr ""
 
 #: Entity/Game.php:623
-msgid "{PLAYER_HOST} İndi ev sənindir."
+msgid "{PLAYER_HOST} is now the host."
 msgstr ""
 
 #: Entity/Game.php:671 Entity/Game.php:716 Entity/Game.php:761
-msgid "Siz ev sahibi deyilsiniz!"
+msgid "You're not the host!"
 msgstr ""
 
 #: Entity/Game.php:675
-msgid "Təpik vuracaq oyunçu yoxdur!"
+msgid "There is no player to kick!"
 msgstr ""
 
 #: Entity/Game.php:685
-msgid "{PLAYER_GUEST} Təpikləndi..."
+msgid "{PLAYER_GUEST} was kicked..."
 msgstr ""
 
 #: Entity/Game.php:837 Entity/Game.php:885 Entity/Game.php:961
@@ -131,24 +131,24 @@ msgstr ""
 #: Entity/Game/Rockpaperscissors.php:298
 #: Entity/Game/Rockpaperscissorslizardspock.php:243
 #: Entity/Game/Russianroulette.php:297 Entity/Game/Russianroulette.php:312
-msgid "Çıxın"
+msgid "Quit"
 msgstr ""
 
 #: Entity/Game.php:891 Entity/Game.php:967 Entity/Game/Checkers.php:284
 #: Entity/Game/Poolcheckers.php:826 Entity/Game/Rockpaperscissors.php:304
 #: Entity/Game/Rockpaperscissorslizardspock.php:249
 #: Entity/Game/Russianroulette.php:303
-msgid "Təpiklə"
+msgid "Kick"
 msgstr ""
 
 #: Entity/Game.php:951 Entity/Game/Checkers.php:248
 #: Entity/Game/Poolcheckers.php:790 Entity/Game/Rockpaperscissors.php:277
 #: Entity/Game/Rockpaperscissorslizardspock.php:222
-msgid "Yenidən Oyna!"
+msgid "Play again!"
 msgstr ""
 
 #: Entity/Game.php:1037
-msgid "Oyun sessiyası tapılmadı və ya vaxtı bitdi."
+msgid "Game session not found or expired."
 msgstr ""
 
 #: Entity/Game/Checkers.php:117 Entity/Game/Checkers.php:378
@@ -156,7 +156,7 @@ msgstr ""
 #: Entity/Game/Poolcheckers.php:86 Entity/Game/Poolcheckers.php:176
 #: Entity/Game/Rockpaperscissors.php:103 Entity/Game/Russianroulette.php:109
 #: Entity/Game/Tictactoe.php:119
-msgid "Bu oyun bitdi!"
+msgid "This game has ended!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:129 Entity/Game/Checkers.php:154
@@ -164,33 +164,33 @@ msgstr ""
 #: Entity/Game/Connectfour.php:165 Entity/Game/Poolcheckers.php:304
 #: Entity/Game/Poolcheckers.php:306 Entity/Game/Russianroulette.php:137
 #: Entity/Game/Russianroulette.php:150 Entity/Game/Tictactoe.php:153
-msgid "{PLAYER} Qazandı!"
+msgid "{PLAYER} won!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:130 Entity/Game/Checkers.php:155
-msgid "{PLAYER} təslim oldu!"
+msgid "{PLAYER} surrendered!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:146 Entity/Game/Checkers.php:171
-msgid "Təslim olmaq üçün düyməni yenidən basın!"
+msgid "Press the button again to surrender!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:258 Entity/Game/Poolcheckers.php:800
-msgid "təslim oldu"
+msgid "Surrender"
 msgstr ""
 
 #: Entity/Game/Checkers.php:267 Entity/Game/Poolcheckers.php:809
-msgid "Çəkmək üçün səs verin"
+msgid "Vote to draw"
 msgstr ""
 
 #: Entity/Game/Checkers.php:406 Entity/Game/Poolcheckers.php:118
-msgid "Siz artıq səs verdiniz!"
+msgid "You already voted!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:486 Entity/Game/Checkers.php:509
 #: Entity/Game/Checkers.php:557 Entity/Game/Poolcheckers.php:197
 #: Entity/Game/Poolcheckers.php:220 Entity/Game/Poolcheckers.php:271
-msgid "Mümkün olduqda sıçrayış etməlisiniz!"
+msgid "You must make a jump when possible!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:561 Entity/Game/Checkers.php:571
@@ -198,94 +198,94 @@ msgstr ""
 #: Entity/Game/Poolcheckers.php:275 Entity/Game/Poolcheckers.php:285
 #: Entity/Game/Rockpaperscissors.php:122 Entity/Game/Russianroulette.php:127
 #: Entity/Game/Tictactoe.php:127 Entity/Game/Tictactoe.php:143
-msgid "Yanlış hərəkət!"
+msgid "Invalid move!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:569 Entity/Game/Poolcheckers.php:283
-msgid "Yanlış seçim!"
+msgid "Invalid selection!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:575 Entity/Game/Connectfour.php:125
 #: Entity/Game/Poolcheckers.php:289 Entity/Game/Russianroulette.php:113
 #: Entity/Game/Tictactoe.php:123
-msgid "Sənin növbən deyil!"
+msgid "It's not your turn!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:594 Entity/Game/Connectfour.php:167
 #: Entity/Game/Poolcheckers.php:308 Entity/Game/Tictactoe.php:155
-msgid "Oyun heç-heçə ilə başa çatıb!"
+msgid "Game ended with a draw!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:605 Entity/Game/Checkers.php:607
 #: Entity/Game/Poolcheckers.php:319 Entity/Game/Poolcheckers.php:321
-msgid "{PLAYER} heç-heçəyə səs verdi!"
+msgid "{PLAYER} voted to draw!"
 msgstr ""
 
 #: Entity/Game/Checkers.php:613 Entity/Game/Poolcheckers.php:327
-msgid "(Köçürmək istədiyiniz parçanı seçin)"
+msgid "(Select the piece you want to move)"
 msgstr ""
 
 #: Entity/Game/Checkers.php:615 Entity/Game/Poolcheckers.php:329
-msgid "(Seçildi: {COORDINATES})"
+msgid "(Selected: {COORDINATES})"
 msgstr ""
 
 #: Entity/Game/Checkers.php:618 Entity/Game/Poolcheckers.php:332
-msgid "(Hərəkətinizi edin və ya fərqli parça seçin)"
+msgid "(Make your move or select different piece)"
 msgstr ""
 
 #: Entity/Game/Checkers.php:620 Entity/Game/Poolcheckers.php:334
-msgid "(Hərəkətiniz davam etməlidir)"
+msgid "(Your move must continue)"
 msgstr ""
 
 #: Entity/Game/Rockpaperscissors.php:140 Entity/Game/Rockpaperscissors.php:144
-msgid "{PLAYER} bu raundda qalib gəldi!"
+msgid "{PLAYER} won this round!"
 msgstr ""
 
 #: Entity/Game/Rockpaperscissors.php:146
-msgid "Bu tur heç-heçə ilə başa çatıb!"
+msgid "This round ended with a draw!"
 msgstr ""
 
 #: Entity/Game/Rockpaperscissors.php:155 Entity/Game/Rockpaperscissors.php:159
-msgid "{PLAYER} oyunu qazandı!"
+msgid "{PLAYER} won the game!"
 msgstr ""
 
 #: Entity/Game/Rockpaperscissors.php:163
-msgid "Round {ROUND} - seçiminizi edin!"
+msgid "Round {ROUND} - make your picks!"
 msgstr ""
 
 #: Entity/Game/Rockpaperscissors.php:166 Entity/Game/Rockpaperscissors.php:168
-msgid "Gözlənir:"
+msgid "Waiting for:"
 msgstr ""
 
 #: Entity/Game/Russianroulette.php:136 Entity/Game/Russianroulette.php:149
-msgid "{PLAYER} öldu! (təpikləndi)"
+msgid "{PLAYER} died! (kicked)"
 msgstr ""
 
 #: Entity/Game/Russianroulette.php:170
-msgid "{PLAYER} sağ qaldı!"
+msgid "{PLAYER} survived!"
 msgstr ""
 
 #: GameCore.php:127
-msgid "Verilənlər bazası xətası!"
+msgid "Database error!"
 msgstr ""
 
 #: GameCore.php:127 GameCore.php:257 GameCore.php:281 GameCore.php:305
 #: GameCore.php:329
-msgid "Bir neçə saniyədən sonra yenidən cəhd edin."
+msgid "Try again in a few seconds."
 msgstr ""
 
 #: GameCore.php:257
-msgid "Bu oyun üçün proses məşğuldur!"
+msgid "Process for this game is busy!"
 msgstr ""
 
 #: GameCore.php:281
-msgid "Telegram API xətası!"
+msgid "Telegram API error!"
 msgstr ""
 
 #: GameCore.php:305
-msgid "Bot xətası!"
+msgid "Bot error!"
 msgstr ""
 
 #: GameCore.php:329
-msgid "İşlənə bilməyən xəta!"
+msgid "Unhandled error!"
 msgstr ""
