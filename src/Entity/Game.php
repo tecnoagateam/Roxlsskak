@@ -555,7 +555,7 @@ class Game
                 $this->data['players']['guest'] = (array) $this->getCurrentUser(true);
 
                 if ($this->saveData($this->data)) {
-                    return $this->editMessage(__('{PLAYER_GUEST} joined...', ['{PLAYER_GUEST}' => $this->getUserMention('guest')]) . PHP_EOL . __('Waiting for {PLAYER} to start...', ['{PLAYER}' => $this->getUserMention('host')]) . PHP_EOL . __('Press {BUTTON} button to start.', ['{BUTTON}' => '<b>\'' . __('Play') . '\'</b>']), $this->getReplyMarkup('pregame'));
+                    return $this->editMessage(__('{PLAYER_GUEST} qoşulur...', ['{PLAYER_GUEST}' => $this->getUserMention('guest')]) . PHP_EOL . __('Waiting for {PLAYER} to start...', ['{PLAYER}' => $this->getUserMention('host')]) . PHP_EOL . __('Press {BUTTON} button to start.', ['{BUTTON}' => '<b>\'' . __('Play') . '\'</b>']), $this->getReplyMarkup('pregame'));
                 }
 
                 throw new StorageException();
@@ -620,7 +620,7 @@ class Game
                 $this->data['players']['guest'] = null;
 
                 if ($this->saveData($this->data)) {
-                    return $this->editMessage(__('{PLAYER} quit...', ['{PLAYER}' => $currentUserMention]) . PHP_EOL . __("{PLAYER_HOST} is now the host.", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
+                    return $this->editMessage(__('{PLAYER} çıxdı...', ['{PLAYER}' => $currentUserMention]) . PHP_EOL . __("{PLAYER_HOST} is now the host.", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
                 }
 
                 throw new StorageException();
@@ -645,7 +645,7 @@ class Game
             $this->data['players']['guest'] = null;
 
             if ($this->saveData($this->data)) {
-                return $this->editMessage(__('{PLAYER} quit...', ['{PLAYER}' => $currentUserMention]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
+                return $this->editMessage(__('{PLAYER} çıxdı...', ['{PLAYER}' => $currentUserMention]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
             }
 
             throw new StorageException();
@@ -682,7 +682,7 @@ class Game
             $this->data['players']['guest'] = null;
 
             if ($this->saveData($this->data)) {
-                return $this->editMessage(__('{PLAYER_GUEST} was kicked...', ['{PLAYER_GUEST}' => $user]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
+                return $this->editMessage(__('{PLAYER_GUEST} təpikləndi...', ['{PLAYER_GUEST}' => $user]) . PHP_EOL . __("{PLAYER_HOST} is waiting for opponent to join...", ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __("Press {BUTTON} button to join.", ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
             }
 
             throw new StorageException();
@@ -784,7 +784,7 @@ class Game
         }
 
         if ($this->getUser('host') && $this->getUser('guest')) {
-            return $this->editMessage(__('{PLAYER_GUEST} joined...', ['{PLAYER_GUEST}' => $this->getUserMention('guest')]) . PHP_EOL . __('Waiting for {PLAYER} to start...', ['{PLAYER}' => $this->getUserMention('host')]) . PHP_EOL . __('Press {BUTTON} button to start.', ['{BUTTON}' => '<b>\'' . __('Play') . '\'</b>']), $this->getReplyMarkup('pregame'));
+            return $this->editMessage(__('{PLAYER_GUEST} qoşulur...', ['{PLAYER_GUEST}' => $this->getUserMention('guest')]) . PHP_EOL . __('Waiting for {PLAYER} to start...', ['{PLAYER}' => $this->getUserMention('host')]) . PHP_EOL . __('Press {BUTTON} button to start.', ['{BUTTON}' => '<b>\'' . __('Play') . '\'</b>']), $this->getReplyMarkup('pregame'));
         }
 
         return $this->editMessage(__('{PLAYER_HOST} is waiting for opponent to join...', ['{PLAYER_HOST}' => $this->getUserMention('host')]) . PHP_EOL . __('Press {BUTTON} button to join.', ['{BUTTON}' => '<b>\'' . __('Join') . '\'</b>']), $this->getReplyMarkup('lobby'));
@@ -802,7 +802,7 @@ class Game
             [
                 new InlineKeyboardButton(
                     [
-                        'text'          => __('Create'),
+                        'text'          => __('Yarat'),
                         'callback_data' => static::getCode() . ';new',
                     ]
                 ),
@@ -834,13 +834,13 @@ class Game
         $inline_keyboard[] = [
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Quit'),
+                    'text'          => __('çıxın'),
                     'callback_data' => static::getCode() . ";quit",
                 ]
             ),
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Join'),
+                    'text'          => __('Qoşul'),
                     'callback_data' => static::getCode() . ";join",
                 ]
             ),
@@ -862,7 +862,7 @@ class Game
         $inline_keyboard[] = [
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Play'),
+                    'text'          => __('Oyna'),
                     'callback_data' => static::getCode() . ";start",
                 ]
             ),
@@ -882,13 +882,13 @@ class Game
         $inline_keyboard[] = [
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Quit'),
+                    'text'          => __('çıxın'),
                     'callback_data' => static::getCode() . ";quit",
                 ]
             ),
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Kick'),
+                    'text'          => __('Təpiklə'),
                     'callback_data' => static::getCode() . ";kick",
                 ]
             ),
@@ -948,7 +948,7 @@ class Game
             $inline_keyboard[] = [
                 new InlineKeyboardButton(
                     [
-                        'text'          => __('Play again!'),
+                        'text'          => __('Yeniden Oyna!'),
                         'callback_data' => static::getCode() . ';start',
                     ]
                 ),
@@ -958,13 +958,13 @@ class Game
         $inline_keyboard[] = [
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Quit'),
+                    'text'          => __('çıxın'),
                     'callback_data' => static::getCode() . ';quit',
                 ]
             ),
             new InlineKeyboardButton(
                 [
-                    'text'          => __('Kick'),
+                    'text'          => __('təpiklə'),
                     'callback_data' => static::getCode() . ';kick',
                 ]
             ),
