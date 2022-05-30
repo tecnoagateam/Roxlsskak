@@ -81,7 +81,7 @@ class Tictactoe extends Game
     protected function gameAction(): ServerResponse
     {
         if ($this->getCurrentUserId() !== $this->getUserId('host') && $this->getCurrentUserId() !== $this->getUserId('guest')) {
-            return $this->answerCallbackQuery(__("You're not in this game!"), true);
+            return $this->answerCallbackQuery(__("Sən bu oyunda deyilsən!"), true);
         }
 
         $data = &$this->data['game_data'];
@@ -110,17 +110,17 @@ class Tictactoe extends Game
             $data['current_turn'] = 'X';
             $data['board'] = static::$board;
 
-            Utilities::debugPrint('Game initialization');
+            Utilities::debugPrint('Oyunun işə salınması');
         } elseif ($args === null) {
-            Utilities::debugPrint('No move data received');
+            Utilities::debugPrint('Daşıma məlumatı alınmadı');
         }
 
         if (isset($data['current_turn']) && $data['current_turn'] == 'E') {
-            return $this->answerCallbackQuery(__("This game has ended!"), true);
+            return $this->answerCallbackQuery(__("Bu oyun bitdi!"), true);
         }
 
         if ($this->getCurrentUserId() !== $this->getUserId($data['settings'][$data['current_turn']]) && $command !== 'start') {
-            return $this->answerCallbackQuery(__("It's not your turn!"), true);
+            return $this->answerCallbackQuery(__("Növbə sizdə deyil!"), true);
         }
 
         if (isset($args) && isset($data['board'][$args[0]][$args[1]]) && $data['board'][$args[0]][$args[1]] !== '') {
